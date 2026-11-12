@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
+
+    protected $fillable = ['name', 'sku', 'price_cents', 'stock', 'reorder_level', 'active'];
+
+    protected function casts(): array
+    {
+        return ['active' => 'boolean', 'price_cents' => 'integer', 'stock' => 'integer'];
+    }
 }
