@@ -20,6 +20,11 @@ for(let i=0;i<clips.length;i++){
  const filter=`tpad=stop_mode=clone:stop_duration=3,scale=1600:1000:flags=lanczos,pad=1920:1080:160:40:color=0x0b1220,drawbox=x=0:y=903:w=iw:h=177:color=0x0b1220:t=fill,drawbox=x=160:y=903:w=1600:h=2:color=0x5eead4:t=fill,drawtext=fontfile=.recordings/font.ttf:textfile=.recordings/title-${i}.txt:fontsize=20:fontcolor=0x5eead4:x=160:y=930,drawtext=fontfile=.recordings/font.ttf:textfile=.recordings/caption-${i}.txt:fontsize=32:fontcolor=0xf1f5f9:x=160:y=973,fade=t=in:st=0:d=0.18,fade=t=out:st=${duration-.18}:d=0.18`;
  run(['-ss',String(c.start),'-i',c.file,'-t',String(duration),'-an','-vf',filter,...encoding,`.recordings/${out}`]);
  files.push(out);captions.push({start:elapsed,end:elapsed+duration,text:c.caption});elapsed+=duration;console.log('Edited '+c.name);
+ if(c.name==='reports'){
+ run(['-loop','1','-i','docs/assets/report-preview.png','-t','10','-vf','fade=t=in:st=0:d=0.3,fade=t=out:st=9.7:d=0.3',...encoding,'.recordings/report-detail.mp4']);
+ files.push('report-detail.mp4');captions.push({start:elapsed,end:elapsed+10,text:'Actual demo CSV: 24 confirmed orders totaling 4,952 US dollars. Summary and chart calculated from the exported data for this presentation.'});elapsed+=10;
+ }
+
 }
 run(['-loop','1','-i','.recordings/outro.png','-t','4','-vf','fade=t=in:st=0:d=0.25,fade=t=out:st=3.5:d=0.5',...encoding,'.recordings/99.mp4']);files.push('99.mp4');captions.push({start:elapsed,end:elapsed+4,text:'Explore the public repository. Run the application locally. Built by Abdulrhman Yaghi.'});elapsed+=4;
 await fs.writeFile('.recordings/concat.txt',files.map(f=>`file '${f}'`).join('\n'));

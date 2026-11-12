@@ -15,6 +15,7 @@ This signs into the local demo, records seven real application scenes and writes
 ## Edit
 
 ```sh
+node scripts/render-report.mjs
 node scripts/edit-demo.mjs
 ```
 
@@ -23,3 +24,7 @@ The editor creates title cards, trims loading time, adds chapter captions, appli
 Set the FFMPEG_BIN environment variable if FFmpeg is not on PATH. Set DEMO_FONT to a local TrueType font if the default system font path does not exist. Set DEMO_URL to record an alternate local application URL.
 
 The raw recordings and authentication state are ignored by Git. Do not record a production database or use a real account when reproducing this film.
+
+## CSV report scene
+
+The report scene uses docs/assets/sample-sales-report.csv, an actual export containing only fictional demo records. The renderer calculates sales totals, order count and the company breakdown directly from that file. Six rows are shown with shortened order references. Full references remain in the downloadable CSV. The chart is a presentation visual, not part of the CSV export.

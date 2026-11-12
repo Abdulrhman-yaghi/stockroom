@@ -25,13 +25,17 @@ Cancellation returns inventory exactly once.
 Choose dates. Queue the export. Download a private CSV.
 
 7
-00:00:40.233 --> 00:00:44.433
-Trace order, inventory and report events back to their actor.
+00:00:40.233 --> 00:00:50.233
+Actual demo CSV: 24 confirmed orders totaling 4,952 US dollars. Summary and chart calculated from the exported data for this presentation.
 
 8
-00:00:44.433 --> 00:00:50.800
-A built in guide makes the workflow easy to explore.
+00:00:50.233 --> 00:00:54.433
+Trace order, inventory and report events back to their actor.
 
 9
-00:00:50.800 --> 00:00:54.800
+00:00:54.433 --> 00:01:00.800
+A built in guide makes the workflow easy to explore.
+
+10
+00:01:00.800 --> 00:01:04.800
 Explore the public repository. Run the application locally. Built by Abdulrhman Yaghi.
