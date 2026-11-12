@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.500
+Stockroom. A Laravel and Filament project by Abdulrhman Yaghi.
+
+2
+00:00:03.500 --> 00:00:07.700
+Confirmed sales, recent orders and low stock in one place.
+
+3
+00:00:07.700 --> 00:00:15.300
+Every stock adjustment records the actor and the reason.
+
+4
+00:00:15.300 --> 00:00:22.700
+The server checks stock and uses stored product prices.
+
+5
+00:00:22.700 --> 00:00:28.933
+Cancellation returns inventory exactly once.
+
+6
+00:00:28.933 --> 00:00:40.233
+Choose dates. Queue the export. Download a private CSV.
+
+7
+00:00:40.233 --> 00:00:44.433
+Trace order, inventory and report events back to their actor.
+
+8
+00:00:44.433 --> 00:00:50.800
+A built in guide makes the workflow easy to explore.
+
+9
+00:00:50.800 --> 00:00:54.800
+Explore the public repository. Run the application locally. Built by Abdulrhman Yaghi.
