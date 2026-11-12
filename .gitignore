@@ -33,3 +33,6 @@ Thumbs.db
 /test-results/
 /playwright-report/
 /.recordings/
+
+/.recordings-auth.json
+/public/fonts-manifest.json

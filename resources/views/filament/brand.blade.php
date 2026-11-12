@@ -1,0 +1,1 @@
+<span style="display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;letter-spacing:-.5px"><span style="display:grid;place-items:center;background:#14b8a6;color:#071c1c;width:30px;height:30px;border-radius:8px;font-size:19px">S</span>stockroom<span style="font-size:9px;letter-spacing:1px;color:#94a3b8;align-self:end;margin-bottom:3px">DEMO</span></span>
